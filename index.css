@@ -1,0 +1,21 @@
+
+header {
+    background-color: aqua;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0%;
+    
+}
+
+h1 {
+color: rgb(133, 41, 238);
+
+}

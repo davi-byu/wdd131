@@ -19,4 +19,6 @@ h1 {
 color: rgb(133, 41, 238);
 background-color: azure;
 background-position: initial;
+display: block;
+border-radius: 8px;
 }

@@ -3,7 +3,7 @@ header {
     background-color: aqua;
     width: 100%;
     text-align: center;
-    padding: 20px;
+    padding: 1px;
 }
 
 
@@ -17,5 +17,6 @@ body {
 
 h1 {
 color: rgb(133, 41, 238);
-
+background-color: azure;
+background-position: initial;
 }

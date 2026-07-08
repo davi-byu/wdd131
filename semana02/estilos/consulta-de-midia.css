@@ -5,7 +5,7 @@ body {
 
 header,
 main,
-footer  {
+footer {
     max-width: 640px;
     margin: 1rem auto;
     border: 1px solid #a0b0be;
@@ -23,4 +23,3 @@ section {
     padding: 1rem;
     background-color: #ffffff;
 }
-

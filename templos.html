@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Album do Templo | Davi Victor</title>
-    <link
+    <title>Álbum do Templo | Davi Victor</title>
+
     <meta name="description" content="Álbum de templos desenvolvido para o curso WDD 131.">
     <meta name="author" content="Davi Victor">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="estilos/templos.css">
     <link rel="stylesheet" href="estilos/templos-grandes.css">
     <script src="scripts/templos.js" defer></script>
 
 </head>
+
 <body>
 
     <header>
@@ -20,7 +28,10 @@
         <span>
             Álbum do Templo
         </span>
-        <nav>
+
+        <button id="menu" aria-label="Abrir menu"></button>
+
+        <nav class="navigation">
             <a href="index.html">Página Inicial</a>
             <a href="#">Antigo</a>
             <a href="#">Novo</a>
@@ -34,52 +45,50 @@
 
         <h1>Álbum do Templo</h1>
 
-        <section 
+        <section class="galeria">
 
-            class="galeria">
-        
             <figure>
                 <img src="imagens/nigeria.jpg" alt="templo de Nigéria">
                 <figcaption>Templo de Nigéria</figcaption>
             </figure>
 
             <figure>
-                <img src="imagens/philippines_cebu_temple.jpg" alt="Templo da Cidade de Cebu Filipinas">
+                <img src="imagens/philippines_cebu_temple.jpg" alt="Templo da Cidade de Cebu Filipinas" loading="lazy">
                 <figcaption>Cebu Filipinas</figcaption>
             </figure>
-            
+
             <figure>
-                <img src="imagens/templo-idaho.jpg" alt="Templo da Cidade de Idaho">
+                <img src="imagens/templo-idaho.jpg" alt="Templo da Cidade de Idaho" loading="lazy">
                 <figcaption>Idaho</figcaption>
             </figure>
 
             <figure>
-                <img src="imagens/templo-do-recife.jpg" alt="Templo da Cidade de Recife">
+                <img src="imagens/templo-do-recife.jpg" alt="Templo da Cidade de Recife" loading="lazy">
                 <figcaption>Templo do Recife</figcaption>
             </figure>
 
             <figure>
-                <img src="imagens/templo-idaho.jpg" alt="Templo da Cidade de Idaho">
+                <img src="imagens/templo-idaho.jpg" alt="Templo da Cidade de Idaho" loading="lazy">
                 <figcaption>Idaho</figcaption>
             </figure>
 
             <figure>
-                <img src="imagens/templo-de-salt-lake.jpg" alt="Templo da Cidade de Salt Lake">
+                <img src="imagens/templo-de-salt-lake.jpg" alt="Templo da Cidade de Salt Lake" loading="lazy">
                 <figcaption>Templo de Salt Lake</figcaption>
             </figure>
 
             <figure>
-                <img src="imagens/templo-do-mexico.jpg" alt="Templo do mexico">
-                <figcaption>Templo do Mexico</figcaption>
+                <img src="imagens/templo-do-mexico.jpg" alt="Templo da Cidade do México" loading="lazy">
+                <figcaption>Templo da Cidade do México</figcaption>
             </figure>
 
             <figure>
-                <img src="imagens/templo-das-filipinas.jpg" alt="Templo das Filipinas">
+                <img src="imagens/templo-das-filipinas.jpg" alt="Templo das Filipinas" loading="lazy">
                 <figcaption>Templo das Filipinas</figcaption>
             </figure>
 
             <figure>
-                <img src="imagens/templo-inglaterra.jpg" alt="Templo da Inglaterra">
+                <img src="imagens/templo-inglaterra.jpg" alt="Templo da Inglaterra" loading="lazy">
                 <figcaption>Templo da Inglaterra</figcaption>
             </figure>
 
@@ -93,4 +102,5 @@
         <p id="ultimaModificacao"></p>
     </footer>
 </body>
+
 </html>

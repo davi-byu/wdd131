@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: white;
+    color: rgb(33, 24, 216);
+    min-height: 100vh;
+}
+
+header {
+    background-color:
+        rgb(91, 19, 225)
+    ;
+    color:
+        white
+    ;
+    padding:
+        1.5px
+    ;
+    position: relative;
+}

@@ -2,78 +2,73 @@
 <html lang="pt-BR">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Álbum do Templo | Davi Victor</title>
 
-    <meta name="description" content="Álbum de templos desenvolvido para o curso WDD 131.">
+    <meta name="description" content="Álbum de templos desenvolvido por Davi Victor para o curso WDD 131.">
     <meta name="author" content="Davi Victor">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="estilos/templos.css">
     <link rel="stylesheet" href="estilos/templos-grandes.css">
-    <script src="scripts/templos.js" defer></script>
 
+    <script src="scripts/templos.js" defer></script>
 </head>
 
 <body>
 
     <header>
+        <h1>Álbum do Templo</h1>
 
-        <span>
-            Álbum do Templo
-        </span>
-
-        <button id="menu" aria-label="Abrir menu"></button>
+        <button id="menu" type="button" aria-label="Abrir menu de navegação" aria-expanded="false"></button>
 
         <nav class="navigation">
-            <a href="index.html">Página Inicial</a>
+            <a href="#" class="active">Página Inicial</a>
             <a href="#">Antigo</a>
             <a href="#">Novo</a>
             <a href="#">Grande</a>
             <a href="#">Pequeno</a>
         </nav>
-
-
     </header>
-    <main>
 
-        <h1>Álbum do Templo</h1>
+    <main>
+        <h2>Álbum do Templo</h2>
 
         <section class="galeria">
 
             <figure>
-                <img src="imagens/nigeria.jpg" alt="templo de Nigéria">
-                <figcaption>Templo de Nigéria</figcaption>
+                <img src="imagens/nigeria.jpg" alt="Templo da Nigéria" loading="lazy">
+                <figcaption>Templo da Nigéria</figcaption>
             </figure>
 
             <figure>
-                <img src="imagens/philippines_cebu_temple.jpg" alt="Templo da Cidade de Cebu Filipinas" loading="lazy">
-                <figcaption>Cebu Filipinas</figcaption>
+                <img src="imagens/philippines_cebu_temple.jpg" alt="Templo de Cebu, Filipinas" loading="lazy">
+                <figcaption>Templo de Cebu, Filipinas</figcaption>
             </figure>
 
             <figure>
-                <img src="imagens/templo-idaho.jpg" alt="Templo da Cidade de Idaho" loading="lazy">
-                <figcaption>Idaho</figcaption>
+                <img src="imagens/templo-idaho.jpg" alt="Templo de Idaho" loading="lazy">
+                <figcaption>Templo de Idaho</figcaption>
             </figure>
 
             <figure>
-                <img src="imagens/templo-do-recife.jpg" alt="Templo da Cidade de Recife" loading="lazy">
+                <img src="imagens/templo-do-recife.jpg" alt="Templo do Recife" loading="lazy">
                 <figcaption>Templo do Recife</figcaption>
             </figure>
 
             <figure>
-                <img src="imagens/templo-idaho.jpg" alt="Templo da Cidade de Idaho" loading="lazy">
-                <figcaption>Idaho</figcaption>
+                <img src="imagens/templo-assuncao-paraguai.jpg" alt="Templo do Paraguai" loading="lazy">
+                <figcaption>Templo de Assunção, Paraguai</figcaption>
             </figure>
 
             <figure>
-                <img src="imagens/templo-de-salt-lake.jpg" alt="Templo da Cidade de Salt Lake" loading="lazy">
+                <img src="imagens/templo-de-salt-lake.jpg" alt="Templo de Salt Lake" loading="lazy">
                 <figcaption>Templo de Salt Lake</figcaption>
             </figure>
 
@@ -93,14 +88,17 @@
             </figure>
 
         </section>
-
     </main>
+
     <footer>
         <p>
-            &copy; <span id="anoatual"></span> Davi Victor - Paraíba, Brasil
+            &copy; <span id="anoatual"></span>
+            Davi Victor — Paraíba, Brasil
         </p>
+
         <p id="ultimaModificacao"></p>
     </footer>
+
 </body>
 
 </html>

@@ -10,7 +10,7 @@
         display: none;
     }
 
-    .navigation {
+    nav {
         flex-direction: row;
         margin-top: 0;
     }

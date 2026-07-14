@@ -60,8 +60,7 @@ nav {
     display: block;
 }
 
-.navigation a:hover,
-.navigation a.active {
+.navigation a:hover {
     background-color: white;
     color: rgb(91, 19, 225);
 }
@@ -106,4 +105,8 @@ footer {
     text-align: center;
     padding: 1rem;
     margin-top: 1rem;
+}
+
+footer p {
+    margin: 0.25rem 0;
 }

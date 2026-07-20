@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brasil</title>
+    <link rel="stylesheet" href="estilos/local.css">
+    <script src="scripts/local.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Brasil</h1>
+    </header>
+    
+    <main>
+    
+        <section class="hero">
+    
+            <picture>
+                <source srcset="imagens/pais-brasil-grande.webp" media="(min-width: 1000px)">
+                <source srcset="imagens/pais-brasil-media.webp" media="(min-width: 500px)">
+                <img src="imagens/pais-brasil-pequena.webp" alt="Vista do Brasil">
+            </picture>
+    
+        </section>
+    
+        <section class="dados">
+
+            <h2>Dados</h2>
+
+            <ul>
+                <li><strong>Capital:</strong> Brasília</li>
+                <li><strong>População:</strong> Aproximadamente 213,4 milhões de pessoas.</li>
+                <li><strong>Área:</strong> O Brasil tem atualmente uma área territorial oficial de 8.509.360,850 km²</li>
+                <li><strong>Idioma:</strong> Português</li>
+                <li><strong>Moeda:</strong> Real (BRL)</li>
+            </ul>
+    
+        </section>
+    
+        <section class="clima">
+
+            <h2>Clima</h2>
+            
+            <ul>
+                <li><strong>Temperatura:</strong> <span id="temperature">8 °C</span></li>
+            
+                <li><strong>Velocidade do vento:</strong> <span id="windSpeed">10 km/h</span></li>
+            
+                <li><strong>Sensação térmica:</strong> <span id="windChill"></span></li>
+            </ul>
+
+        </section>
+    
+    </main>
+    
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> Brasil
+        </p>
+        
+        <p>
+            Última modificação:
+            <span id="lastModified"></span>
+        </p>
+    </footer>
+    
+</body>
+</html>

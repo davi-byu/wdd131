@@ -1,3 +1,11 @@
+:root {
+    --primary-color: #009739;
+    --secondary-color: #003087;
+    --background-color: #f4f4f4;
+    --card-color: #ffffff;
+    --text-color: #222;
+    --shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
 
 * {
     margin: 0;
@@ -7,50 +15,43 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #f4f4f4;
-    color: #222;
+    background-color: var(--background-color);
+    color: var(--text-color);
     line-height: 1.6;
 }
 
-
 header {
-    background-color: #009739;
+    background-color: var(--primary-color);
     color: white;
     text-align: center;
-    padding: 1px;
+    padding: 1rem;
 }
 
 header h1 {
     font-size: 2.5rem;
 }
 
-
-
 .hero img {
     width: 100%;
     display: block;
 }
-
-
 
 main {
     max-width: 1200px;
     margin: 0 auto;
 }
 
-
-
 .dados,
 .clima {
-    background-color: white;
+    background-color: var(--card-color);
     margin: 30px 20px;
     padding: 25px;
     border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, .15);
+    box-shadow: var(--shadow);
 }
 
 h2 {
-    color: #003087;
+    color: var(--secondary-color);
     margin-bottom: 20px;
 }
 
@@ -64,22 +65,19 @@ li {
 }
 
 strong {
-    color: #222;
+    color: var(--text-color);
 }
 
-
-
 footer {
-    background-color: #009739;
+    background-color: var(--primary-color);
     color: white;
     text-align: center;
-    padding: 1px;
+    padding: 1rem;
 }
 
 footer p {
     margin: 8px 0;
 }
-
 
 @media (min-width: 768px) {
 
@@ -100,5 +98,10 @@ footer p {
 
     footer {
         margin-top: 30px;
+    }
+
+    .clima h2::after {
+        content: " ⛅";
+        font-size: 1.2rem;
     }
 }

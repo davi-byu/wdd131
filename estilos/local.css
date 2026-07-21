@@ -96,12 +96,17 @@ footer p {
         margin: 0;
     }
 
-    footer {
-        margin-top: 30px;
+    .clima img {
+        display: none;
     }
 
     .clima h2::after {
         content: " ⛅";
         font-size: 1.2rem;
     }
+
+    footer {
+        margin-top: 30px;
+    }
 }
+

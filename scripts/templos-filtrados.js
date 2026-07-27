@@ -116,7 +116,7 @@ function exibirTemplos(listaTemplos) {
 
         const card = document.createElement("article");
 
-        const titulo = document.createElement("h3");
+        const titulo = document.createElement("h2");
         titulo.textContent = templo.nomeDoTemplo;
 
         const localizacao = document.createElement("p");

@@ -144,10 +144,6 @@ function exibirTemplos(listaTemplos) {
         
 exibirTemplos(templos);
 
-document.querySelector("#home").addEventListener("click", (e) => {
-    e.preventDefault();
-    exibirTemplos(templos);
-});
 
 document.querySelector("#old").addEventListener("click", (e) => {
     e.preventDefault();

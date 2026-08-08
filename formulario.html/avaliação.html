@@ -1,10 +1,12 @@
 <!DOCTYPE html>
+
 <html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    ```
     <title>Avaliação de Produto | Davi Victor</title>
 
     <meta name="description" content="Formulário de avaliação de produtos desenvolvido para o curso WDD 131.">
@@ -12,31 +14,34 @@
 
     <link rel="stylesheet" href="estilos/form.css">
     <script src="scripts/form.js" defer></script>
+    ```
+
 </head>
 
 <body>
 
+    ```
     <header>
         <h1>Avaliação de Produto</h1>
     </header>
 
     <main>
-
         <form method="get" action="avaliacao.html">
 
             <div class="campo">
-                <label for="produto">Nome do Produto *</label>
+                <label for="produto">Nome do Produto <span>*</span></label>
 
                 <select id="produto" name="produto" required>
-                    <option value="" selected disabled>Selecione um Produto...</option>
+                    <option value="" disabled selected>
+                        Selecione um Produto...
+                    </option>
                 </select>
             </div>
 
-            <div class="campo">
-                <p>Classificação Geral *</p>
+            <fieldset class="campo">
+                <legend>Classificação Geral <span>*</span></legend>
 
-                <div class="estrelas">
-
+                <div class="classificacao">
                     <input type="radio" id="estrela1" name="classificacao" value="1" required>
                     <label for="estrela1">☆</label>
 
@@ -51,68 +56,61 @@
 
                     <input type="radio" id="estrela5" name="classificacao" value="5">
                     <label for="estrela5">☆☆☆☆☆</label>
-
                 </div>
-            </div>
+            </fieldset>
 
             <div class="campo">
-                <label for="instalacao">Data de Instalação *</label>
+                <label for="instalacao">Data de Instalação <span>*</span></label>
 
                 <input type="date" id="instalacao" name="instalacao" required>
             </div>
 
-            <div class="campo">
+            <fieldset class="campo">
+                <legend>Recursos Úteis</legend>
 
-                <p>Recursos úteis (opcional)</p>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="durabilidade" name="recursos" value="Durabilidade">
+                    <label for="durabilidade">Durabilidade</label>
+                </div>
 
-                <label>
-                    <input type="checkbox" name="recursos" value="Durabilidade">
-                    Durabilidade
-                </label>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="facilidade" name="recursos" value="Facilidade de uso">
+                    <label for="facilidade">Facilidade de uso</label>
+                </div>
 
-                <label>
-                    <input type="checkbox" name="recursos" value="Facilidade de uso">
-                    Facilidade de uso
-                </label>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="desempenho" name="recursos" value="Desempenho">
+                    <label for="desempenho">Desempenho</label>
+                </div>
 
-                <label>
-                    <input type="checkbox" name="recursos" value="Desempenho">
-                    Desempenho
-                </label>
-
-                <label>
-                    <input type="checkbox" name="recursos" value="Design">
-                    Design
-                </label>
-
-            </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="design" name="recursos" value="Design">
+                    <label for="design">Design</label>
+                </div>
+            </fieldset>
 
             <div class="campo">
-
                 <label for="comentario">Avaliação Escrita</label>
 
-                <textarea id="comentario" name="comentario" rows="5"></textarea>
-
+                <textarea id="comentario" name="comentario" rows="5" placeholder="Escreva sua avaliação..."></textarea>
             </div>
 
             <div class="campo">
-
                 <label for="usuario">Nome de Usuário</label>
 
-                <input type="text" id="usuario" name="usuario">
-
+                <input type="text" id="usuario" name="usuario" autocomplete="name">
             </div>
 
-            <input type="submit" value="Publicar Avaliação">
+            <input class="botao" type="submit" value="Publicar Avaliação">
 
         </form>
-
     </main>
 
     <footer>
-        <p>&copy;2026 🌴 Davi Victor 🌴 Brasil</p>
+        <p>&copy; 2026 🌴 Davi Victor 🌴 Brasil</p>
         <p id="lastModified"></p>
     </footer>
+    ```
 
 </body>
 

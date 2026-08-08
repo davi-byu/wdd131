@@ -1,31 +1,29 @@
 <!DOCTYPE html>
-
 <html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    ```
-    <title>Avaliação de Produto | Davi Victor</title>
+    <title>Revisão de Produto | Davi Victor</title>
 
-    <meta name="description" content="Formulário de avaliação de produtos desenvolvido para o curso WDD 131.">
+    <meta name="description"
+        content="Formulário de revisão de produtos desenvolvido por Davi Victor para o curso WDD 131.">
+
     <meta name="author" content="Davi Victor">
 
     <link rel="stylesheet" href="estilos/form.css">
     <script src="scripts/form.js" defer></script>
-    ```
-
 </head>
 
 <body>
 
-    ```
     <header>
-        <h1>Avaliação de Produto</h1>
+        <h1>Revisão de Produto</h1>
     </header>
 
     <main>
+
         <form method="get" action="avaliacao.html">
 
             <div class="campo">
@@ -42,20 +40,22 @@
                 <legend>Classificação Geral <span>*</span></legend>
 
                 <div class="classificacao">
+
                     <input type="radio" id="estrela1" name="classificacao" value="1" required>
                     <label for="estrela1">☆</label>
 
-                    <input type="radio" id="estrela2" name="classificacao" value="2">
+                    <input type="radio" id="estrela2" name="classificacao" value="2" required>
                     <label for="estrela2">☆☆</label>
 
-                    <input type="radio" id="estrela3" name="classificacao" value="3">
+                    <input type="radio" id="estrela3" name="classificacao" value="3" required>
                     <label for="estrela3">☆☆☆</label>
 
-                    <input type="radio" id="estrela4" name="classificacao" value="4">
+                    <input type="radio" id="estrela4" name="classificacao" value="4" required>
                     <label for="estrela4">☆☆☆☆</label>
 
-                    <input type="radio" id="estrela5" name="classificacao" value="5">
+                    <input type="radio" id="estrela5" name="classificacao" value="5" required>
                     <label for="estrela5">☆☆☆☆☆</label>
+
                 </div>
             </fieldset>
 
@@ -87,6 +87,7 @@
                     <input type="checkbox" id="design" name="recursos" value="Design">
                     <label for="design">Design</label>
                 </div>
+
             </fieldset>
 
             <div class="campo">
@@ -104,13 +105,13 @@
             <input class="botao" type="submit" value="Publicar Avaliação">
 
         </form>
+
     </main>
 
     <footer>
         <p>&copy; 2026 🌴 Davi Victor 🌴 Brasil</p>
         <p id="lastModified"></p>
     </footer>
-    ```
 
 </body>
 

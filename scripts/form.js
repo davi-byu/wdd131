@@ -37,6 +37,7 @@ products.forEach(product => {
     productSelect.appendChild(option);
 });
 
+
 // Rodapé
 const lastModified = document.querySelector("#lastModified");
 

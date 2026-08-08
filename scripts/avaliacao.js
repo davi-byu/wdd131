@@ -1,13 +1,11 @@
 const parametros = new URLSearchParams(window.location.search);
 
-
 const produto = parametros.get("produto");
 const classificacao = parametros.get("classificacao");
 const instalacao = parametros.get("instalacao");
 const comentario = parametros.get("comentario");
 const usuario = parametros.get("usuario");
 const recursos = parametros.getAll("recursos");
-
 
 console.log("Produto:", produto);
 console.log("Classificação:", classificacao);
@@ -16,59 +14,21 @@ console.log("Recursos:", recursos);
 console.log("Comentário:", comentario);
 console.log("Usuário:", usuario);
 
+let numeroAvaliacoes = Number(
+localStorage.getItem("numeroAvaliacoes")
+) || 0;
 
-// ===============================
-// SALVAR A AVALIAÇÃO
-// ===============================
+numeroAvaliacoes++;
 
-// Recupera as avaliações já existentes
-let avaliacoes = JSON.parse(localStorage.getItem("avaliacoes")) || [];
+localStorage.setItem(
+"numeroAvaliacoes",
+numeroAvaliacoes
+);
 
-
-// Cria um ID único para a avaliação
-const idAvaliacao = Date.now().toString();
-
-
-// Cria a nova avaliação
-const novaAvaliacao = {
-    id: idAvaliacao,
-    produto: produto,
-    classificacao: classificacao,
-    instalacao: instalacao,
-    recursos: recursos,
-    comentario: comentario,
-    usuario: usuario
-};
-
-
-// Verifica se esta avaliação já foi processada nesta página
-const avaliacaoAtual = sessionStorage.getItem("avaliacaoAtual");
-
-
-if (avaliacaoAtual !== idAvaliacao) {
-
-    avaliacoes.push(novaAvaliacao);
-
-    localStorage.setItem(
-        "avaliacoes",
-        JSON.stringify(avaliacoes)
-    );
-
-    sessionStorage.setItem(
-        "avaliacaoAtual",
-        idAvaliacao
-    );
-
-    console.log("Nova avaliação salva!");
-}
-
-
-console.log("Todas as avaliações:", avaliacoes);
-
-
-// ===============================
-// EXIBIR A AVALIAÇÃO ATUAL
-// ===============================
+console.log(
+"Número de avaliações:",
+numeroAvaliacoes
+);
 
 const produtoTexto = document.querySelector("#produto");
 const classificacaoTexto = document.querySelector("#classificacao");
@@ -76,20 +36,30 @@ const instalacaoTexto = document.querySelector("#instalacao");
 const recursosTexto = document.querySelector("#recursos");
 const comentarioTexto = document.querySelector("#comentario");
 const usuarioTexto = document.querySelector("#usuario");
-
+const contadorAvaliacoes = document.querySelector("#contadorAvaliacoes");
 
 produtoTexto.textContent = produto;
 
 classificacaoTexto.textContent =
-    "⭐".repeat(Number(classificacao));
+"⭐".repeat(Number(classificacao));
 
 instalacaoTexto.textContent = instalacao;
 
 recursosTexto.textContent =
-    recursos.join(", ");
+recursos.join(", ");
 
 comentarioTexto.textContent =
-    comentario || "Nenhum comentário informado";
+comentario || "Nenhum comentário informado";
 
 usuarioTexto.textContent =
-    usuario || "Anônimo";
+usuario || "Anônimo";
+
+contadorAvaliacoes.textContent =
+`Avaliações concluídas: ${numeroAvaliacoes}`;
+
+const lastModified = document.querySelector("#lastModified");
+
+if (lastModified) {
+lastModified.textContent =
+`Última modificação: ${document.lastModified}`;
+}

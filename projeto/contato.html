@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Davi Victor">
+
+    <title>Contato</title>
+
+    <link rel="stylesheet" href="estilos/main.css">
+    <script src="scripts/form.js 16" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Catálogo de Vendas</h1>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Entre em Contato</h2>
+
+            <form id="contatoForm">
+
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+                <button type="submit">
+                    Enviar
+                </button>
+
+            </form>
+
+            <p id="mensagem-sucesso"></p>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Catálogo de Vendas</p>
+        <a href="referencias.html">Referências</a>
+    </footer>
+
+</body>
+
+</html>

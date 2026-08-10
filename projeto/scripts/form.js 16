@@ -1,0 +1,26 @@
+const formulario = document.querySelector("#contatoForm");
+const mensagemSucesso = document.querySelector("#mensagem-sucesso");
+
+formulario.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    const nome = document.querySelector("#nome").value;
+    const email = document.querySelector("#email").value;
+    const mensagem = document.querySelector("#mensagem").value;
+
+    const contato = {
+        nome,
+        email,
+        mensagem
+    };
+
+    localStorage.setItem(
+        "ultimoContato",
+        JSON.stringify(contato)
+    );
+
+    mensagemSucesso.textContent =
+        `Obrigado, ${nome}! Sua mensagem foi enviada com sucesso.`;
+
+    formulario.reset();
+});

@@ -1,18 +1,21 @@
 const produtos = [
     {
         id: 1,
-        nome: "Notebook",
-        preco: 3500
+        nome: "Chuteira Adidas",
+        preco: 100,
+        imagem: "imagens/chuteira-adidas.webp"
     },
     {
         id: 2,
-        nome: "Mouse Gamer",
-        preco: 120
+        nome: "Chuteira Nike",
+        preco: 100,
+        imagem: "imagens/chuteira-nike.webp"
     },
     {
         id: 3,
-        nome: "Teclado Mecânico",
-        preco: 250
+        nome: "Chuteira Society Nike ",
+        preco: 100,
+        imagem: "imagens/chuteira-nike-botinha.webp"
     }
 ];
 
@@ -25,6 +28,7 @@ function exibirProdutos(produtosFiltrados) {
     produtosFiltrados.forEach(produto => {
         listaProdutos.innerHTML += `
             <div class="produto">
+                <img src="${produto.imagem}" alt="${produto.nome}">
                 <h3>${produto.nome}</h3>
                 <p>R$ ${produto.preco.toFixed(2)}</p>
             </div>

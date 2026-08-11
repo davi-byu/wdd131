@@ -16,6 +16,12 @@ const produtos = [
         nome: "Chuteira Society Nike ",
         preco: 100,
         imagem: "imagens/chuteira-nike-botinha.webp"
+    },
+     {
+        id: 4,
+        nome: "Chuteira Society Nike CR7 ",
+        preco: 100,
+        imagem: "imagens/chuteira-nike-cr7.webp"
     }
 ];
 

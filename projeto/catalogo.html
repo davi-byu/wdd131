@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Catálogo Perowba com produtos selecionados, pesquisa e carrinho de compras.">
 
-    <title>Catálogo de Produtos</title>
+    <title>Catálogo de Produtos | Perowba</title>
 
     <link rel="stylesheet" href="estilos/main.css">
     <script src="scripts/catalogo.js" defer></script>
@@ -13,39 +14,96 @@
 
 <body>
 
-    <header>
-        <h1>Catálogo Perowba</h1>
-    
-        <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="catalogo.html">Catálogo</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
-        </nav>
-    
-        <a href="carrinho.html" class="carrinho-link" aria-label="Abrir carrinho de compras">
-            🛒
-            <span id="contador-carrinho">0</span>
-        </a>
+    <header class="site-header">
+        <div class="container header-content">
+
+            <a href="index.html" class="logo">
+                Catálogo Perowba
+            </a>
+
+            <nav aria-label="Navegação principal">
+                <ul class="nav-list">
+                    <li>
+                        <a href="index.html">Início</a>
+                    </li>
+
+                    <li>
+                        <a href="catalogo.html" class="active" aria-current="page">
+                            Catálogo
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contato.html">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <a href="carrinho.html" class="carrinho-link" aria-label="Abrir carrinho de compras">
+                <span aria-hidden="true">🛒</span>
+                <span id="contador-carrinho">0</span>
+            </a>
+
+        </div>
     </header>
 
     <main>
 
-        <section>
-            <h2>Nossos Produtos</h2>
+        <section class="catalogo-section">
+            <div class="container">
 
-            <input type="text" id="pesquisa" placeholder="Pesquisar produto...">
+                <div class="section-heading">
+                    <span>Catálogo</span>
 
-            <div id="lista-produtos"></div>
+                    <h1>Nossos Produtos</h1>
+
+                    <p>
+                        Pesquise e encontre os produtos disponíveis em nosso catálogo.
+                    </p>
+                </div>
+
+                <div class="pesquisa-container">
+                    <label for="pesquisa">
+                        Pesquisar produto
+                    </label>
+
+                    <input type="search" id="pesquisa" name="pesquisa" placeholder="Digite o nome de um produto...">
+                </div>
+
+                <p id="resultado-pesquisa" class="resultado-pesquisa" aria-live="polite"></p>
+
+                <div id="lista-produtos" class="lista-produtos"></div>
+
+            </div>
         </section>
 
     </main>
 
-    <footer>
-        <p>&copy; 2026 Catálogo de Vendas</p>
+    <footer class="site-footer">
 
-        <a href="referencias.html">Referências</a>
+        <div class="container footer-content">
+            <div>
+                <strong>Catálogo Perowba</strong>
+
+                <p>
+                    Produtos, qualidade e praticidade em um só lugar.
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <a href="index.html">Início</a>
+                <a href="catalogo.html">Catálogo</a>
+                <a href="contato.html">Contato</a>
+                <a href="referencias.html">Referências</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>
+                &copy; <span id="current-year"></span> Catálogo de Vendas
+            </p>
+        </div>
+
     </footer>
 
 </body>

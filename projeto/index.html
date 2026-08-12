@@ -1,14 +1,12 @@
-```html
 <!DOCTYPE html>
 <html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Davi Victor">
-    <meta name="description" content="Catálogo de vendas online com diversos produtos.">
+    <meta name="description" content="Catálogo de vendas com produtos selecionados, qualidade e ótimos preços.">
 
-    <title>Perowba Sports</title>
+    <title>Catálogo de Vendas</title>
 
     <link rel="stylesheet" href="estilos/main.css">
     <script src="scripts/main.js" defer></script>
@@ -16,49 +14,139 @@
 
 <body>
 
-    <header>
-        <h1>Catálogo de Vendas</h1>
+    <header class="site-header">
+        <div class="container header-content">
+            <a href="index.html" class="logo">
+                Catálogo de Vendas
+            </a>
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="catalogo.html">Catálogo</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
-        </nav>
+            <nav aria-label="Navegação principal">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="active">Início</a></li>
+                    <li><a href="catalogo.html">Catálogo</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
 
-        <section>
-            <h2>Bem-vindo</h2>
+        <section class="hero">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <span class="hero-label">Qualidade e bons preços</span>
 
-            <p>
-                Conheça nossos produtos com qualidade e ótimos preços.
-                Nosso catálogo oferece diversas opções para atender às suas necessidades.
-            </p>
+                    <h1>Encontre os produtos certos para você</h1>
+
+                    <p>
+                        Conheça nosso catálogo com produtos selecionados,
+                        variedade e excelentes opções para diferentes necessidades.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="catalogo.html" class="btn btn-primary">
+                            Ver catálogo
+                        </a>
+
+                        <a href="contato.html" class="btn btn-secondary">
+                            Fale conosco
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-card">
+                    <p class="hero-card-label">Compra fácil</p>
+                    <h2>Escolha seus produtos favoritos</h2>
+                    <p>
+                        Navegue pelo catálogo, veja os detalhes e encontre
+                        as melhores opções disponíveis.
+                    </p>
+                </div>
+            </div>
         </section>
 
-        <section>
-            <h2>Destaques</h2>
+        <section class="features">
+            <div class="container">
+                <div class="section-heading">
+                    <span>Diferenciais</span>
+                    <h2>Por que escolher nosso catálogo?</h2>
+                    <p>
+                        Uma experiência simples, organizada e pensada
+                        para ajudar você a encontrar bons produtos.
+                    </p>
+                </div>
 
-            <p>
-                Navegue pelo catálogo e encontre os melhores produtos
-                disponíveis.
-            </p>
+                <div class="cards">
+
+                    <article class="feature-card">
+                        <div class="feature-icon">✓</div>
+                        <h3>Produtos selecionados</h3>
+                        <p>
+                            Itens organizados para facilitar sua busca
+                            e ajudar na escolha.
+                        </p>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-icon">★</div>
+                        <h3>Qualidade</h3>
+                        <p>
+                            Nosso catálogo apresenta produtos com informações
+                            claras e objetivas.
+                        </p>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-icon">R$</div>
+                        <h3>Bons preços</h3>
+                        <p>
+                            Compare as opções disponíveis e encontre produtos
+                            que atendam ao seu orçamento.
+                        </p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="cta">
+            <div class="container cta-content">
+                <div>
+                    <span>Comece agora</span>
+                    <h2>Confira os produtos disponíveis</h2>
+                </div>
+
+                <a href="catalogo.html" class="btn btn-light">
+                    Explorar catálogo
+                </a>
+            </div>
         </section>
 
     </main>
 
-    <footer>
-        <p>&copy; 2026 Catálogo de Vendas</p>
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <div>
+                <strong>Catálogo de Vendas</strong>
+                <p>Produtos, qualidade e praticidade em um só lugar.</p>
+            </div>
 
-        <p>
-            <a href="referencias.html">Referências</a>
-        </p>
+            <div class="footer-links">
+                <a href="index.html">Início</a>
+                <a href="catalogo.html">Catálogo</a>
+                <a href="contato.html">Contato</a>
+                <a href="references.html">Referências</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>
+                &copy; <span id="current-year"></span> Catálogo de Vendas
+            </p>
+        </div>
     </footer>
 
 </body>
 
 </html>
-```

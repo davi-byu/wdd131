@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Carrinho de compras do Catálogo Perowba.">
+
+    <title>Carrinho | Catálogo Perowba</title>
+
+    <link rel="stylesheet" href="estilos/main.css">
+    <script src="scripts/carrinho.js" defer></script>
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="container header-content">
+
+            <a href="index.html" class="logo">
+                Catálogo Perowba
+            </a>
+
+            <nav aria-label="Navegação principal">
+                <ul class="nav-list">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="catalogo.html">Catálogo</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+
+            <a href="carrinho.html" class="carrinho-link" aria-current="page" aria-label="Carrinho de compras">
+                <span aria-hidden="true">🛒</span>
+                <span id="contador-carrinho">0</span>
+            </a>
+
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="carrinho-section">
+
+            <div class="section-heading">
+                <span>Seu pedido</span>
+                <h1>Carrinho de Compras</h1>
+
+                <p>
+                    Confira os produtos adicionados antes de finalizar.
+                </p>
+            </div>
+
+            <p id="mensagem-carrinho" class="mensagem-carrinho" aria-live="polite"></p>
+
+            <div id="itens-carrinho"></div>
+
+            <div class="resumo-carrinho">
+
+                <h2>Resumo do Pedido</h2>
+
+                <p>
+                    Quantidade:
+                    <strong id="quantidade-total">0</strong>
+                </p>
+
+                <p class="total-carrinho">
+                    Total:
+                    <strong id="valor-total">R$ 0,00</strong>
+                </p>
+
+                <div class="acoes-carrinho">
+
+                    <button type="button" id="limpar-carrinho" class="btn-secundario">
+                        Limpar carrinho
+                    </button>
+
+                    <a href="catalogo.html" class="btn">
+                        Continuar comprando
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+
+        <div class="container footer-content">
+            <div>
+                <strong>Catálogo Perowba</strong>
+                <p>Produtos, qualidade e praticidade em um só lugar.</p>
+            </div>
+
+            <div class="footer-links">
+                <a href="index.html">Início</a>
+                <a href="catalogo.html">Catálogo</a>
+                <a href="contato.html">Contato</a>
+                <a href="referencias.html">Referências</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>
+                &copy; <span id="current-year"></span> Catálogo de Vendas
+            </p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
